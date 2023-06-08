@@ -108,11 +108,17 @@ main {
     border-radius: 25px;
     background-color: transparent;
     border: white 2px solid;
-    color: white;
+
+    a {
+      text-decoration: none;
+      color: white;
+    }
 
     &:hover {
       background-color: white;
-      color: black;
+      a {
+        color: black;
+      }
     }
   }
 }

@@ -98,10 +98,15 @@ main .btn {
   border-radius: 25px;
   background-color: transparent;
   border: white 2px solid;
+}
+main .btn a {
+  text-decoration: none;
   color: white;
 }
 main .btn:hover {
   background-color: white;
+}
+main .btn:hover a {
   color: black;
 }
 
