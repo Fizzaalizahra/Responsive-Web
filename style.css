@@ -450,6 +450,10 @@ main .btn:hover a {
   footer nav ul li {
     font-size: 0.5rem;
   }
+  main .heading {
+    font-size: 1rem;
+    text-align: center;
+  }
   .gallery .gallery-text h1 {
     font-size: 3rem;
   }
@@ -484,6 +488,10 @@ main .btn:hover a {
   .services .services-heading {
     position: relative;
     top: 100%;
+    left: 0%;
+  }
+  .services .services-heading h1 {
+    font-size: 3rem;
   }
   .services .services-section-1 .services-section-1-headings {
     margin-left: 1rem;
@@ -507,7 +515,7 @@ main .btn:hover a {
     bottom: -150px;
   }
   .services .services-section-2 {
-    margin-top: 0%;
+    margin-top: -50%;
   }
   .services .services-section-2 .services-section-2-headings h1 {
     font-size: 1.5rem;
@@ -601,7 +609,8 @@ main .btn:hover a {
   }
   .services .services-heading {
     position: relative;
-    top: 100%;
+    top: 0;
+    left: 0;
   }
   .services .services-section-1 .services-section-1-headings {
     margin-left: 1rem;
@@ -625,7 +634,7 @@ main .btn:hover a {
     bottom: -150px;
   }
   .services .services-section-2 {
-    margin-top: -150%;
+    margin-top: -350%;
   }
   .services .services-section-2 .services-section-2-headings h1 {
     font-size: 1.5rem;
@@ -720,7 +729,8 @@ main .btn:hover a {
   }
   .services .services-heading {
     position: relative;
-    top: 70%;
+    top: 0;
+    left: 0;
   }
   .services .services-section-1 .services-section-1-headings {
     margin-left: 1rem;
@@ -744,7 +754,7 @@ main .btn:hover a {
     bottom: -150px;
   }
   .services .services-section-2 {
-    margin-top: -150%;
+    margin-top: -300%;
   }
   .services .services-section-2 .services-section-2-headings h1 {
     font-size: 1.5rem;
@@ -843,7 +853,8 @@ main .btn:hover a {
   }
   .services .services-heading {
     position: relative;
-    top: 50%;
+    top: -75%;
+    left: 0;
   }
   .services .services-section-1 .services-section-1-headings {
     margin-left: 1rem;
@@ -868,7 +879,7 @@ main .btn:hover a {
     bottom: -150px;
   }
   .services .services-section-2 {
-    margin-top: -150%;
+    margin-top: -300%;
   }
   .services .services-section-2 .services-section-2-headings h1 {
     font-size: 1.5rem;
