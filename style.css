@@ -1,0 +1,663 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Outfit", sans-serif;
+}
+
+header {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100px;
+  z-index: 1;
+}
+header nav {
+  margin-top: 4rem;
+}
+header nav ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+}
+header nav ul a {
+  text-decoration: none;
+}
+header nav ul a li {
+  color: white;
+  transition: all 0.3s ease-in-out;
+  font-size: 1.5rem;
+}
+header nav ul a li:hover {
+  background-color: white;
+  color: black;
+  padding: 1rem 2rem;
+  border-radius: 25px;
+}
+
+footer {
+  height: 100px;
+  /*   background: linear-gradient(
+    0deg,
+    rgba(33, 97, 184, 1) 0%,
+    rgba(170, 70, 179, 1) 100%
+  ); */
+  background: linear-gradient(to top, rgb(33, 97, 184) 0%, rgb(45, 29, 90) 99%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer nav {
+  width: 100%;
+}
+footer nav ul {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+footer nav ul li {
+  list-style-type: none;
+  color: white;
+  transition: all ease-in-out 0.3s;
+}
+footer nav ul li i {
+  margin-left: 1rem;
+  padding-right: 2rem;
+  border-right: 1px white solid;
+}
+footer nav ul li:hover {
+  transform: scale(1.3);
+  color: #2d1d5a;
+}
+
+/* Home Page */
+main {
+  z-index: 0;
+  top: 0;
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  background: url("./Assets/home-BG.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+main .heading {
+  font-size: 3rem;
+  color: white;
+}
+main .btn {
+  padding: 1rem 4rem;
+  border-radius: 25px;
+  background-color: transparent;
+  border: white 2px solid;
+  color: white;
+}
+main .btn:hover {
+  background-color: white;
+  color: black;
+}
+
+.testimonials {
+  height: 100vh;
+  width: 100%;
+  margin-top: 47.3%;
+  background-color: #2d1d5a;
+  display: flex;
+  flex-direction: column;
+  row-gap: 5rem;
+}
+.testimonials .testimonial-headings {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  color: white;
+}
+.testimonials .testimonial-headings h1 {
+  margin: 0;
+  font-size: 5rem;
+  font-weight: 700;
+}
+.testimonials .testimonial-headings p {
+  font-size: 1.5rem;
+}
+.testimonials .testimonial-cards {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%;
+  max-height: 350px;
+}
+.testimonials .testimonial-cards .testimonial-card {
+  background: linear-gradient(0deg, rgb(45, 84, 181) 0%, rgb(77, 70, 179) 100%);
+  max-width: 350px;
+}
+.testimonials .testimonial-cards .testimonial-card .testimonial-card-pic {
+  position: relative;
+  left: 25%;
+  top: -25%;
+}
+.testimonials .testimonial-cards .testimonial-card .testimonial-card-pic img {
+  width: 150px;
+}
+.testimonials .testimonial-cards .testimonial-card .testimonial-card-text {
+  color: white;
+  text-align: center;
+  margin: 1rem;
+  position: relative;
+  top: -25%;
+}
+.testimonials .testimonial-cards .testimonial-card .testimonial-card-text p {
+  line-height: 35px;
+}
+
+/* Gallery Page */
+.gallery {
+  position: absolute;
+  background-color: #2d1d5a;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.gallery .gallery-text {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  margin-top: 7rem;
+  color: white;
+}
+.gallery .gallery-text h1 {
+  font-size: 5rem;
+}
+.gallery .gallery-text p {
+  font-size: 2rem;
+  max-width: 50%;
+  text-align: center;
+}
+.gallery .gallery-picture-cards {
+  margin-top: 10rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  width: 100%;
+  margin: 10rem 1rem;
+  max-width: 60%;
+}
+.gallery .gallery-picture-cards .gallery-picture-card {
+  max-width: 250px;
+  min-height: 300px;
+  overflow: hidden;
+  padding: 1rem;
+  background: linear-gradient(0deg, rgb(33, 97, 184) 0%, rgb(170, 70, 179) 100%);
+  border-radius: 10px;
+}
+.gallery .gallery-picture-cards .gallery-picture-card img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  max-width: 250px;
+  max-height: 250px;
+  min-width: 250px;
+  min-height: 250px;
+}
+.gallery .gallery-picture-cards .gallery-picture-card h3 {
+  color: white;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+/* About Page */
+.about {
+  position: relative;
+  background-color: #2d1d5a;
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  justify-content: space-around;
+  padding: 0 3rem;
+  height: 89.3vh;
+}
+.about .about-text {
+  width: 100%;
+  max-width: 40%;
+  color: white;
+  text-align: center;
+}
+.about .about-text h1 {
+  font-size: 4rem;
+}
+.about .about-text p {
+  font-size: 2rem;
+  filter: drop-shadow(2px 2px 200px rgb(4, 103, 185));
+}
+.about .about-pic img {
+  max-width: 450px;
+  border-radius: 10px;
+  background: linear-gradient(0deg, rgb(33, 97, 184) 0%, rgb(170, 70, 179) 100%);
+  padding: 0.2rem;
+}
+
+/* Contact Page */
+.contact {
+  height: 100vh;
+  background: url("./Assets/home-BG.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.contact .section-stuff {
+  height: 100%;
+  max-height: 50%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 20px;
+  background-color: rgba(255, 255, 255, 0.45);
+  box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.25);
+  -webkit-backdrop-filter: blur(15px);
+          backdrop-filter: blur(15px);
+}
+.contact .section-stuff h1 {
+  font-size: 4rem;
+  color: #2d1d5a;
+}
+.contact .section-stuff p {
+  font-size: 1rem;
+  color: #2d1d5a;
+  max-width: 50%;
+}
+.contact .section-stuff .btns {
+  display: flex;
+  gap: 3rem;
+}
+.contact .section-stuff .btns button {
+  width: 200px;
+  height: 50px;
+  border: none;
+  border-radius: 25px;
+  font-size: 1rem;
+  background: linear-gradient(0deg, rgb(33, 97, 184) 0%, rgb(170, 70, 179) 100%);
+  color: white;
+  transition: all 0.3s ease-in-out;
+}
+.contact .section-stuff .btns button:hover {
+  transform: scale(1.2);
+}
+
+@media only screen and (max-width: 320px) and (max-height: 480px) {
+  body {
+    background-color: #2d1d5a;
+  }
+  header nav {
+    margin-top: 0;
+    margin-left: -2rem;
+  }
+  header nav ul a li {
+    font-size: 0.5rem;
+  }
+  main .heading {
+    font-size: 1rem;
+    text-align: center;
+  }
+  .testimonials {
+    margin-top: 190%;
+    display: none;
+  }
+  .testimonials .testimonial-headings h1 {
+    font-size: 3rem;
+  }
+  .testimonials .testimonial-headings p {
+    font-size: 1rem;
+  }
+  .testimonials .testimonial-cards {
+    margin-top: 230%;
+    flex-direction: column;
+    max-width: 75%;
+    width: 100%;
+    row-gap: 5rem;
+  }
+  .testimonials .testimonial-cards .testimonial-card {
+    transform: translate(20%, 25%);
+  }
+  .testimonials .testimonial-cards .testimonial-card .testimonial-card-pic {
+    left: 25%;
+    top: -10%;
+  }
+  .testimonials .testimonial-cards .testimonial-card .testimonial-card-pic img {
+    width: 100px;
+  }
+  .testimonials .testimonial-cards .testimonial-card .testimonial-card-text h3 {
+    padding-top: 5rem;
+  }
+  footer {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    height: 100%;
+    max-height: 10%;
+    flex-wrap: wrap;
+    overflow: hidden;
+  }
+  footer nav ul {
+    margin: 0;
+    margin-right: 1rem;
+  }
+  footer nav ul li {
+    font-size: 0.5rem;
+  }
+  .gallery .gallery-text h1 {
+    font-size: 3rem;
+  }
+  .gallery .gallery-text p {
+    font-size: 1rem;
+  }
+  .gallery .gallery-picture-cards .gallery-picture-card {
+    min-height: 200px;
+  }
+  .gallery .gallery-picture-cards .gallery-picture-card img {
+    max-width: 150px;
+    max-height: 150px;
+    min-width: 150px;
+    min-height: 150px;
+  }
+  .about {
+    max-width: 80%;
+    padding: 2rem;
+    width: 100%;
+    gap: 3rem;
+  }
+  .about .about-text h1 {
+    font-size: 1rem;
+  }
+  .about .about-text p {
+    font-size: 0.5rem;
+    width: 150px;
+  }
+  .about .about-pic img {
+    max-width: 150px;
+  }
+  .contact .section-stuff {
+    max-width: 75%;
+  }
+  .contact .section-stuff h1 {
+    font-size: 1.5rem;
+  }
+  .contact .section-stuff p {
+    font-size: 0.5rem;
+  }
+  .contact .section-stuff .btns {
+    gap: 0.2rem;
+  }
+  .contact .section-stuff .btns button {
+    width: 100px;
+    height: 25px;
+    font-size: 0.7rem;
+  }
+}
+@media only screen and (max-width: 375px) and (max-height: 812px) {
+  body {
+    background-color: #2d1d5a;
+  }
+  header nav {
+    margin-top: 0;
+    margin-left: -2rem;
+  }
+  header nav ul a li {
+    font-size: 1rem;
+  }
+  main .heading {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+  footer {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    height: 100%;
+    max-height: 10%;
+    flex-wrap: wrap;
+    overflow: hidden;
+  }
+  footer nav ul {
+    margin: 0;
+    margin-right: 1rem;
+  }
+  footer nav ul li {
+    font-size: 0.6rem;
+  }
+  .gallery .gallery-text h1 {
+    font-size: 3rem;
+  }
+  .gallery .gallery-text p {
+    font-size: 1rem;
+  }
+  .gallery .gallery-picture-cards .gallery-picture-card {
+    min-height: 200px;
+    max-width: 182px;
+  }
+  .gallery .gallery-picture-cards .gallery-picture-card img {
+    max-width: 150px;
+    max-height: 150px;
+    min-width: 150px;
+    min-height: 150px;
+  }
+  .about {
+    max-width: 80%;
+    padding: 3rem;
+    width: 100%;
+    gap: 1rem;
+  }
+  .about .about-text h1 {
+    font-size: 1.5rem;
+  }
+  .about .about-text p {
+    font-size: 0.7rem;
+    width: 120px;
+  }
+  .about .about-pic img {
+    max-width: 200px;
+  }
+  .contact .section-stuff {
+    max-width: 75%;
+    max-height: 25%;
+  }
+  .contact .section-stuff h1 {
+    font-size: 1.5rem;
+  }
+  .contact .section-stuff p {
+    font-size: 0.5rem;
+  }
+  .contact .section-stuff .btns {
+    gap: 0.2rem;
+  }
+  .contact .section-stuff .btns button {
+    width: 100px;
+    height: 25px;
+    font-size: 0.7rem;
+  }
+}
+@media only screen and (max-width: 411px) and (max-height: 731px) {
+  body {
+    background-color: #2d1d5a;
+  }
+  header nav {
+    margin-top: 0;
+    margin-left: -2rem;
+  }
+  header nav ul a li {
+    font-size: 1rem;
+  }
+  main .heading {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+  footer {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    height: 100%;
+    max-height: 10%;
+    flex-wrap: wrap;
+    overflow: hidden;
+  }
+  footer nav ul {
+    margin: 0;
+    margin-right: 1rem;
+  }
+  footer nav ul li {
+    font-size: 0.8rem;
+  }
+  .gallery .gallery-text h1 {
+    font-size: 5rem;
+  }
+  .gallery .gallery-text p {
+    font-size: 1.5rem;
+  }
+  .gallery .gallery-picture-cards .gallery-picture-card {
+    min-height: 200px;
+    max-width: 182px;
+  }
+  .gallery .gallery-picture-cards .gallery-picture-card img {
+    max-width: 150px;
+    max-height: 150px;
+    min-width: 150px;
+    min-height: 150px;
+  }
+  .about {
+    max-width: 80%;
+    padding: 3rem;
+    width: 100%;
+    gap: 1rem;
+  }
+  .about .about-text h1 {
+    font-size: 1.5rem;
+  }
+  .about .about-text p {
+    font-size: 0.7rem;
+    width: 120px;
+  }
+  .about .about-pic img {
+    max-width: 200px;
+  }
+  .contact .section-stuff {
+    max-width: 75%;
+    max-height: 35%;
+  }
+  .contact .section-stuff h1 {
+    font-size: 1.5rem;
+  }
+  .contact .section-stuff p {
+    font-size: 0.7rem;
+  }
+  .contact .section-stuff .btns {
+    gap: 0.2rem;
+  }
+  .contact .section-stuff .btns button {
+    width: 100px;
+    height: 25px;
+    font-size: 0.7rem;
+  }
+}
+@media only screen and (max-width: 768px) and (max-height: 1024px) {
+  body {
+    background-color: #2d1d5a;
+  }
+  header nav {
+    margin-top: 0;
+    margin-left: -2rem;
+  }
+  header nav ul a li {
+    font-size: 1.5rem;
+  }
+  main .heading {
+    font-size: 1.6rem;
+    text-align: center;
+  }
+  footer {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    height: 100%;
+    max-height: 10%;
+    flex-wrap: wrap;
+    overflow: hidden;
+  }
+  footer nav ul {
+    margin: 0;
+    margin-right: 1rem;
+  }
+  footer nav ul li {
+    font-size: 0.8rem;
+  }
+  .gallery .gallery-text h1 {
+    font-size: 5rem;
+  }
+  .gallery .gallery-text p {
+    font-size: 1.5rem;
+  }
+  .gallery .gallery-picture-cards {
+    max-width: 80%;
+  }
+  .gallery .gallery-picture-cards .gallery-picture-card {
+    min-height: 200px;
+    max-width: 200px;
+    min-width: 200px;
+  }
+  .gallery .gallery-picture-cards .gallery-picture-card img {
+    max-width: 200px;
+    max-height: 200px;
+    min-width: 200px;
+    min-height: 200px;
+  }
+  .about {
+    max-width: 80%;
+    padding: 3rem;
+    width: 100%;
+    gap: 1rem;
+  }
+  .about .about-text h1 {
+    font-size: 2rem;
+  }
+  .about .about-text p {
+    font-size: 1rem;
+    width: 220px;
+  }
+  .about .about-pic img {
+    max-width: 300px;
+  }
+  .contact .section-stuff {
+    max-width: 75%;
+    max-height: 35%;
+  }
+  .contact .section-stuff h1 {
+    font-size: 2rem;
+  }
+  .contact .section-stuff p {
+    font-size: 1rem;
+  }
+  .contact .section-stuff .btns {
+    gap: 0.2rem;
+  }
+  .contact .section-stuff .btns button {
+    width: 150px;
+    height: 50px;
+    font-size: 1rem;
+  }
+}/*# sourceMappingURL=style.css.map */
